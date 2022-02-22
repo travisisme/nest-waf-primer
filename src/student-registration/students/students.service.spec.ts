@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { create } from 'domain';
 import { StudentsService } from './students.service';
 
 describe('StudentsService', () => {
@@ -15,4 +16,6 @@ describe('StudentsService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  create()
 });

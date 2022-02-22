@@ -31,10 +31,9 @@ async function bootstrap() {
   //Let's indicate where the static files like CSS are.
   const staticAssets = join(__dirname, '..', 'static');
   app.useStaticAssets(staticAssets);
-
   
-
   //start the application
   await app.listen(3000);
+
 }
 bootstrap();
